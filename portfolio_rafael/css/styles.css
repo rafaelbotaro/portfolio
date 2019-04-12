@@ -1,0 +1,534 @@
+/*características gerais do html e body*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*barra de navegação da home*/
+
+.nav {
+    background-color: #141414;
+    color: white;
+    height: 50px;
+
+    animation-name: menu-capa;
+    animation-duration: 3s;
+}
+
+.nav ul {
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+    height: 50px;
+}
+
+.nav li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav a.ativo {
+    color: #0066FF;
+}
+
+.nav a:hover {
+    color: #0066FF;
+}
+
+.nav li.line3-icon {
+    display: none;
+}
+
+.nav li.line3-icon:hover {
+    color: #0066FF;
+    cursor: pointer;
+}
+
+/*foto e descrição na home*/
+
+.info {
+    color: #0066FF  /*#206BFF;*/ 
+}
+
+.info h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: 400;
+}
+
+.info h2 {
+    font-size: 33px;
+    color: white;
+    margin-left: 77px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.info h3 {
+    font-size: 17.5px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.info div {
+    display: inline-block;
+    height: 650px;
+    height: 100%;
+}
+
+.pic {
+   width: 40%;
+   text-align: center;
+
+   animation-name: capa;
+   animation-duration: 3s;
+}
+
+.pic img {
+    width: 350px;
+    border-radius: 350px;
+    -webkit-border-radius: 350px;
+    -moz-border-radius: 350px;
+    -ms-border-radius: 350px;
+    -o-border-radius: 350px;
+    margin-top: 120px;
+}
+
+.eu {
+    vertical-align: top;
+    width: 59%;
+    margin-top: 160px;
+
+    animation-name: titulo-capa;
+    animation-duration: 3s;    
+}
+
+/*todo o conteúdo do curriculum*/
+
+.content {
+    padding: 40px 250px 50px 200px;
+    letter-spacing: 0.7px;
+    text-align: justify;
+
+    animation-name: cont;
+    animation-duration: 3s;
+}
+
+.content img {
+    float: left;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+
+.content h1 {
+    color: #0066FF;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.content h2 {
+    color: #0066FF;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.content h3 {
+    color: #0066FF;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.content p {
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+/*conteúdo do contact e redes sociais*/
+
+.contact div {
+    height: 100%;
+}
+.contact {
+    padding: 40px 250px 0px 200px;
+
+    animation-name: cont;
+    animation-duration: 3s;
+}
+.contact h1 {
+    color: #0066FF;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.contact h3 {
+    color: #0066FF;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contact p {
+    color: white;
+    padding-bottom: 30px;
+    font-weight: 200;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+
+.social a {
+    padding-right: 10px;
+}
+
+/*conteúdo do portfolio*/
+
+.works {
+    padding: 40px 150px 70px 150px;
+
+    animation-name: cont;
+    animation-duration: 3s;
+}
+
+.works h1 {
+    color: #0066FF;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+.mini  {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-size: contain;
+    overflow: hidden;
+
+}
+.mini a {
+    text-decoration: none;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 135px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.blackbox:hover {
+    opacity: 0.85;
+    transition:1s;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    -ms-transition:1s;
+    -o-transition:1s;
+}
+
+.btext {
+    text-align: center;
+}
+
+.btext h1{
+    font-size: 20px;
+    color: #0066FF;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.btext h2 {
+    text-transform: none;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    margin-top: -25px;
+    letter-spacing: 1px;
+}
+
+/*conteúdo das páginas de trabalhos no portfolio*/
+
+.work1 {
+    padding: 40px 150px 70px 150px;
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+    line-height: 26px;
+
+    animation-name: cont;
+    animation-duration: 3s;
+}
+
+.work1 h1 {
+    color: #0066FF;
+    padding-bottom: 30px;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.work1 h4 {
+    font-weight: 400;
+}
+
+.work1 p {
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.fotos-trabalhos {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*efeito azul no link site do work1 e demais páginas trabalhos portifólio*/
+
+.referencia {
+    text-decoration: none;
+    color: #0066FF;
+}
+
+/*efeitos de movimentações nos blocos de cada página*/
+
+@keyframes capa {
+    0% { opacity: 0; transform: translate(0px, 30px) ; -webkit-transform: translate(0px, 30px) ; -moz-transform: translate(0px, 30px) ; -ms-transform: translate(0px, 30px) ; -o-transform: translate(0px, 30px) ; }
+    100% { opacity: 1; transform: translate(0px, 0px) ; -webkit-transform: translate(0px, 0px) ; -moz-transform: translate(0px, 0px) ; -ms-transform: translate(0px, 0px) ; -o-transform: translate(0px, 0px) ; }
+}
+
+@keyframes titulo-capa {
+    0% { opacity: 0; transform: translate(0px, -30px) ; -webkit-transform: translate(0px, -30px) ; -moz-transform: translate(0px, -30px) ; -ms-transform: translate(0px, -30px) ; -o-transform: translate(0px, -30px) ; }
+    100% { opacity: 1; transform: translate(0px, 0px) ; -webkit-transform: translate(0px, 0px) ; -moz-transform: translate(0px, 0px) ; -ms-transform: translate(0px, 0px) ; -o-transform: translate(0px, 0px) ; }
+}
+
+@keyframes menu-capa {
+    0% { opacity: 0; }
+    50% {opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@keyframes cont {
+    0% { opacity: 0; transform: translate(-30px, 0px) ; -webkit-transform: translate(-30px, 0px) ; -moz-transform: translate(-30px, 0px) ; -ms-transform: translate(-30px, 0px) ; -o-transform: translate(-30px, 0px) ; }
+    100% { opacity: 1; transform: translate(0px, 0px) ; -webkit-transform: translate(0px, 0px) ; -moz-transform: translate(0px, 0px) ; -ms-transform: translate(0px, 0px) ; -o-transform: translate(0px, 0px) ; }
+}
+
+/*design responsivo para mobile*/
+
+@media (max-width: 1000px) {
+
+    /*responsividade página inicial*/
+
+    .nav li {
+        display: none;
+        font-weight: 200;
+    }
+
+    .nav li.line3-icon {
+        display: inline-block;
+    }
+
+    .info div {
+        display: block;
+        height: auto;
+    }
+
+    .pic {
+        width: 100%;
+    }
+
+    .pic img {
+        margin-top: 35px;
+        margin-bottom: 20px;
+        max-width: 60%;
+    }
+
+    .eu {
+        margin-top: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .info h1 {
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 33px;
+    }
+
+    .info h2 {
+        font-size: 19.3px;
+        margin-top: 25px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .info h3 {
+        font-size: 10.1px;
+        margin-left: 6px;
+        margin-right: 10px;
+    }
+
+    /*responsividade página curriculum*/
+
+    .content {
+        padding: 15px 5% 40px 5%;
+        letter-spacing: 0.7px;
+        text-align: justify;
+    }
+
+    .content img {
+        float: left;
+        max-width: 100%;
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-bottom: 15px;
+    }
+    
+    .content h1 {
+        font-size: 22px;
+    }
+    
+    .content h2 {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+    
+    .content h3 {
+        font-size: 14px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .content p {
+        font-size: 15px;
+        line-height: 28px;
+        font-weight: 200;
+    }
+
+    /*responsividade página contato*/
+
+    .contact {
+        padding: 25px 10% 0px 10%;
+    }
+
+    .contact h1 {
+        font-size: 22px;
+    }
+
+    .contact h3 {
+        font-size: 16px;
+    }
+    
+    .contact p {
+        font-size: 16px;
+    }
+    
+    /*responsividade página portifolio*/
+
+    .works {
+        padding: 15px 6% 40px 5%;
+    }
+    .works h1 {
+       font-size: 22px;
+    }
+    
+    .mini  {
+        max-width: 100%
+        background-size: auto 100%;
+    }
+    
+    .blackbox {
+        opacity: 0.75;
+    }
+    
+    .btext {
+        text-align: center;
+    }
+    
+    .btext h1{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .btext h2 {
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    /*responsividade página de trabalhos*/
+
+    .work1 {
+        padding: 15px 5% 40px 5%;
+    }
+
+    .work1 h1 {
+        padding-bottom: 20px;
+        font-weight: 400;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .work1 h4 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .work1 p {
+        font-size: 16px;
+    }
+
+    /*responsividade meu mobile*/
+
+    .menujs {
+        height: auto;
+    }
+
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .menujs li {
+        display: block;
+        border-bottom: solid white 0.5px;
+    }
+
+}
